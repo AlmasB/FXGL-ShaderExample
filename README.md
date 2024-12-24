@@ -1,6 +1,10 @@
 ## FXGL Shader Example
 
-This is a first draft of the API for FXGL's shader support. The environment requirements are:
+This is a first draft of the API for FXGL's shader support. 
+
+![screenshot](screenshot.png)
+
+The environment requirements are:
 
 - Windows
 - JDK 23+

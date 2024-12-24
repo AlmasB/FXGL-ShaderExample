@@ -9,9 +9,9 @@ import static com.almasb.fxgl.dsl.FXGL.*;
 /**
  * @author Almas Baim (https://github.com/AlmasB)
  */
-public class ExampleApp extends GameApplication {
+public class SimpleApp extends GameApplication {
 
-    private static final String SIMPLE_SHADER = """
+    private static final String SHADER = """
             #version 460
             
             uniform float red;
@@ -30,7 +30,7 @@ public class ExampleApp extends GameApplication {
 
     @Override
     protected void initGame() {
-        GLImageView view = new GLImageView(1280, 720, SIMPLE_SHADER);
+        GLImageView view = new GLImageView(1280, 720, SHADER);
         view.getProperties().setValue("red", 0.5);
 
         entityBuilder()
